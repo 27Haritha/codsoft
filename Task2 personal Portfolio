@@ -6,6 +6,506 @@
 	<title>My Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="Style.css">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+	padding:0 ;
+	margin:0;
+	box-sizing:border-box ;
+	list-style:none ;
+	scroll-behavior:smooth ;
+	text-decoration: none;
+}
+body
+{
+	font-family:"Poppins",sans-serif ;
+	background-color: grey;
+	color: white;
+}
+header
+{
+	display: flex;
+	align-items:center ;
+	justify-content:center ;width:100% ;
+	padding: 20px 10px;
+	background-color: black;
+	
+}
+.logo
+{
+	font-size:40px ;
+	font-weight:500 ;
+	letter-spacing: 1px;
+	padding-right: 300px;
+}
+span 
+{
+	color: green ;
+}
+.Navbar
+{
+	display:flex ;
+
+}
+.Navbar a
+{
+	color: cyan ;
+	font-weight: 500;
+	padding: 10px 20px;
+}
+.Navbar a:hover
+{
+	text-shadow: 0 0 10px blue;
+}
+#menu-icon
+{
+	font-size: 10 rem;
+	z-index: 10001 ; 
+	cursor: pointer;
+	margin-left:80px ;
+
+	background: black;
+	border-radius:5px ;
+	color: whitesmoke;
+}
+section
+{
+	padding:100px 10% ;
+}
+.Home
+{
+	min-height: 100vh;
+	height:100% ;
+	width: 100%;
+	display: grid;
+	grid-template-columns:repeat(2, 1fr) ;
+	align-items:center ;
+	grid-gap: 4em ;
+	background: url("../../Images/home4.jpg");
+
+}
+.home-content>h1
+{
+ 
+  font-weight: 700;
+}
+.home-content
+{
+	max-width:600px ;
+}
+.change-text
+{
+   font-size: 1.5 rem;
+   font-weight: 600;
+   color: hotpink;
+}
+.change-text h3
+{
+	display:inline-flex ;
+	margin: auto;
+	vertical-align: top;
+}
+.change-text h3 .word
+{
+	position:absolute ;
+	display: flex;
+	opacity:0 ;
+}
+.change-text h3 .word letter
+{
+	transform-origin: center center 25px;
+
+}
+.change-text h3 .word letter.out
+{
+	transform:rotateX(90deg) ;
+	transition: 0.32s cubic-bezier(0.6,0.0,0.7,0.2);
+}
+.change-text h3 .word .letter.in{
+  transition: 0.38s ease;
+}
+.home-content p
+{
+	color:white ;
+	line-height: 1.6;
+}
+.info-box
+{
+	display:inline-flex ;
+	justify-content:space-between ;
+	align-items: center;
+	width: 300px;
+	margin: 1rem 0 2rem;
+}
+.info-box h5
+{
+	font-weight: 600;
+	color: darkviolet;
+	
+}
+.info-box span 
+{
+
+	color: blue;
+}
+.Social-icons
+{
+	margin-top: 8rem;
+	display: flex;
+	justify-content: space-between;
+	width: 100px;
+	height: 30px;
+
+}
+.Social-icons a{
+  display: inline-flex;
+  width: 50px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: cyan;
+  color: black;
+  border: 2px solid grey;
+  transition: .6s;
+  box-shadow: 0 0 0.3rem palevioletred;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 25px;
+
+}
+.Social-icons a i{
+
+	font-size: 1.5 rem;
+}
+.Social-icons a:hover{
+
+	color: var(--bg-color);
+}
+.Social-icons a::before{
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: .6s;
+	z-index: -1;
+}
+.shape
+{
+	position: absolute;
+	width: 100%	;
+	height: auto;
+}
+.Home-image
+{
+	position: relative;
+}
+.img-box
+{
+text-align: center;
+}
+.img-box img
+{
+	width: 100%;
+	max-width: 250px;
+	height: auto;
+	border-radius: 20%;
+	border-color: darkviolet;
+	border-style: solid;
+}
+.buttonbox
+{
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+	height: 45px;
+}
+.buttonbox a.button
+{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	height: 100%;
+	background: violet;
+	color: black;
+	font-size: 1 rem;
+	letter-spacing: 1px;
+	font-weight: 600;
+	transition: .6s;
+	box-shadow: aliceblue;
+	border-radius: 5px;
+	position: relative;
+}
+.about{
+
+	display:flex ;
+	justify-content:center ;
+	align-items: center;
+	grid-gap: 2em;
+	background: url("../../Images/about1.jpg");
+
+}
+.about .img-about 
+{
+	text-align: center;
+	position: relative;
+}
+.about .img-about img
+{
+ 
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+	padding-left: 30px;
+
+}
+.about-content span{
+  
+  color: yellow;
+  font-size: .8rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.about-content h2
+{
+	color: cyan;
+	font-weight: 500;
+	font-size: var(--normal-font);
+}
+.about-content p{
+  color: pink;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+.info-about1
+{
+	position: absolute;
+	font-size: .8rem;
+	background: black;
+	padding: 10px;
+	width: 300px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+.container h1{
+	text-align: center;
+	text-decoration: none;
+	margin:5px 5px;
+	color: green;
+}
+.container h2{
+	color: white;
+	margin: 10px 550px;
+	font-size: 50px;
+}
+#skills{
+	width: 500px;
+	margin:20px;
+	padding: 5px;
+	text-align: center;
+}
+#skills h2 span{
+	color: darkviolet;
+}
+
+h3{
+	color: darkcyan;
+	margin: 5px;
+}
+.container li{
+	margin:10px 50px;
+	padding: 5px;
+}
+.bar{
+	background: grey;
+	display: block;
+	height: 20px;
+	border: 1px solid lawngreen;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 1px 3px grey;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+	box-shadow: 0 1px 3px whitesmoke;
+	
+}
+.bar span{
+	height: 20px;
+	float:left ;
+	background: darkviolet;
+
+}
+.html{
+	width;90%;
+	animation:html 10s infinite;
+}
+.css{
+	width;80%;
+	animation:css 10s infinite;
+}
+.javascript{
+	width;75%;
+	animation:javascript 10s infinite;
+}
+.java{
+	width;80%;
+	animation:java 10s infinite;
+}
+.sql{
+	width;90%;
+	animation:sql 10s infinite;
+}
+@keyframes html{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:90%;
+	}
+}
+@keyframes css{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:80%;
+	}
+}
+@keyframes javascript{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:75%;
+	}
+}
+@keyframes java{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:80%;
+	}
+}
+@keyframes sql{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:90%;
+	}
+}
+.skill
+{
+	background: url("../../Images/skill3.jpg");
+}
+
+.skillsright
+{
+	display: flex;
+}
+
+#background
+{
+	background: url("../../Images/home4.jpg");
+}
+.resume>h1
+{
+	color: cyan;
+	padding-bottom: 20px;
+}
+.contact>h1
+{
+	color: blue;
+	padding-bottom: 30px;
+}
+.resume>p
+{
+	padding-bottom: 20px;
+	color: orange;
+}
+.filler-button
+{
+	margin: 2 rem;
+	text-align: center;
+}
+.filler-button .btn
+{
+	background: none;
+	outline: none;
+	cursor: pointer;
+	border: none;
+	font-size: .90rem;
+	font-weight: 600;
+	letter-spacing: .4px;
+	margin: 1.3rem;
+	color: violet;
+}
+.filler-button .btn:hover
+{
+	color: blue;
+}
+.portfolio-gallery
+{
+	display: grid;
+	
+}
+.port-box
+{
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	border: 2px solid cyan;
+	background: black;
+}
+.port-image
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+.port-image img
+{
+   width: 300px;
+   height: 300px;
+}
+.portfolio
+{
+	background: url("../../Images/skill3.jpg");
+}
+.maintext>h1
+{
+	color: cyan;
+}
+.resume
+{
+	padding-bottom: 0px;
+	padding-top: 5px;
+}
+.contact
+{
+	padding-bottom: 0px;
+	padding-top: 30px;
+}
+.download
+{
+	padding: 5px;
+	background: black;
+	color: white;
+	box-shadow: 5px solid white;
+}
+ </style>
 </head>
 <body>
 	<header>
