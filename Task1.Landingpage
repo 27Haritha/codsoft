@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+	<style type="text/css">
+		body
+		{
+		  background-image: url("../../Images/coffee8.jpg");
+		  padding-left: 30px;
+		  padding-right: 50px;
+		  padding-top: 0px;
+		  background-size:cover;
+			background-position:top;
+		}
+		
+		.one>header>h1
+		{
+			font-family:sans-serif;
+			color: blue;
+		}
+		.one
+		{
+			text-align: center;
+			justify-content:space-evenly ;
+			padding: 30px 20px;
+			width: inherit;
+		}
+		.one>header
+		{
+			background-color: rgb(111, 78, 55, 0.9);
+			margin-top: 10px;
+			padding: 10px 20px;
+			position: relative;
+			width: 100%;
+		}
+		a
+		{
+			justify-content: space-between;
+			padding: 30px;
+			text-decoration: none;
+			text-align: center;
+			text-decoration-color: blueviolet;
+			padding-top: 30px;
+			color: white;
+			box-shadow: 0 0 50px white;
+		}
+		a:hover
+		{
+			color: orange;
+			box-shadow: 0 0 30px greenyellow;
+			text-decoration: underline;
+		}
+		.items
+		{
+			padding-top: 30px;
+			background:linear-gradient(black,grey);
+			width: 100%;
+			padding-right: 45px;
+			padding-bottom: 30px;
+		}
+		.about
+		{
+			padding-right: 1000px;
+			padding-top: 20px;
+			font-family:  cursive;
+			color: palevioletred;
+		}
+		p
+		{
+			color: green;
+		}
+		.order
+		{
+			padding-top: 100px;
+			justify-content: space-between;
+		  padding-right: 1000px;
+		  display: flex;
+		}
+		.order>button
+		{
+			padding: 20px;
+			color: black;
+			background-color: olive;
+			justify-content: space-evenly;
+			cursor: pointer;
+		}
+		button:hover
+		{
+			color: white;
+			box-shadow: 0 0 20px whitesmoke; 
+			text-decoration: underline;
+			border-color: black;
+
+		}
+		.about>h1
+		{
+			display: inline-block;
+		  animation-direction: revert-layer;
+			animation-duration: 5s;
+			animation-name: ;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="one">
+		<header><h1>Coffee House</h1></header>
+    <div class="items">
+		<a href="">Home</a>
+		<a href="">Menu</a>
+		<a href="">order</a>
+		<a href="">Book Table</a>
+		<a href="">More Details</a>
+	</div>
+	<div class="about">
+		<h1>Happiness Begins with Coffee</h1>
+		<p>Life is Beautiful when You have a cup of Coffee in your Hand</p>
+	</div>
+	<div class="order">
+		<button>Check Menu</button>
+		<button>Order Now</button>
+	</div>
+
+</body>
+</html>
