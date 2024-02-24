@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	<header>
+		<div class="logo"><span>H</span>aripriya.</div>
+		<ul class="Navbar">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#skill">Skills</a></li>
+			<li><a href="#project">Projects</a></li>
+			<li><a href="#resume">Resume</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		<div id="menu-icon" class="bx bx-menu"></div>
+
+	</header>
+	  <section id="Home" class="Home">
+	  	<div class="home-content">
+	  		<h1>Hi I am Chembeti Haripriya</h1>
+	  		<div class="change-text">
+	  			<h1> Aspiring Software Engineer</h1>
+	  			<h3>
+	  				<span class="word">skilledin</span>
+	  				<span class="word">JavaFullStack</span>
+	  				<span class="word">WebDevelopement </span>
+	  			</h3>
+	  		</div>
+	  			<P> Fresher completed training in Java Full Stack Web Developement, Here is My Personal portfolio, Please check out my portfolio and contact</P>
+	  			<div class="info-box">
+	  				<div class="email-info">
+	  					<h5>Email:</h5>
+	  					<span>chharipriya2001@gmail.com</span>
+	  				</div>
+	  			</div>
+	  			<div class="buttonbox">
+	  				<a href="#about"class="button">About Me</a>
+	  				<a href="#contact" class="button">Contact</a>
+	  				
+
+	  			</div>
+
+	  			<div class="Social-icons">
+	  				<a href="https://www.facebook.com/profile.php?id=100075381194983&mibextid=ZbWKwL"><i class='bx bxl-facebook-circle'></i></a>
+	  				<a href="https://www.linkedin.com/in/chembeti-haripriya-3b1693247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin-square'></i></a>
+	  				<a href="https://www.instagram.com/_.haripriyaah._/"><i class='bx bxl-instagram'></i></a>
+	  				<a href="https://github.com/27Haritha"><i class='bx bxl-github'></i></a>
+	  				
+
+	  			</div>
+	  	  </div>
+	  	<div class="Home-image">
+	  		<div class="img-box">
+	  			<img src="../../Images/my image1.jpg" alt="">
+	  		</div>
+        </div>
+    </section>
+        <section id="about" class="about">
+        	<div class="img-about">
+        		<img src="../../Images/my image1.jpg">
+        		<div class="info-about1">
+        			<span>Aspiring</span>
+        			<p>To become a software engineer</p>
+        	    </div>
+           </div>
+           <div class="about-content">
+         	<span>Let me Introduce about myself</span>
+         	<h2>About me</h2>
+         	<p> I am chembeti Haripriya an Aspiring software engineer/developer and Basically I am from Andhrapradesh, I have completed my graduation in B-Tech specialized in Agricultural Biotechnology Engineering at Bharath Institute of higher education and research, After completion of my graduation I have done a course in fullstack web development, where I have gained knowledge in Java programming and web development here is a list of my skills and projects please check out</p>
+
+         	<div class="buttonbox">
+         		<a href="#skill"class="button">Read More</a>
+         		
+         	</div>
+         </div>
+  </section>
+    <section id="skill" class="skill">
+       <div class="container" id="skills">
+       	    <h1 class="heading1">Technical Skills</h1>
+       	    <li><h3>HTML <i style="color:red" class='bx bxl-html5'></i></h3>
+       	    	   <span class="bar"><span class="html"></span></span>
+       	    </li>
+       	    <li><h3>CSS<i style="color:blue" class='bx bxl-css3'></i></h3>
+       	    	   <span class="bar"><span class="css"></span></span>
+       	    </li>
+       	    <li><h3>JAVASCRIPT<i style="color:yellow;" class='bx bxl-javascript'></i></h3>
+       	    	   <span class="bar"><span class="javascript"></span></span>
+       	    </li>
+       	    <li><h3>JAVA<i style="color:orange" class='bx bxl-java'></i></h3>
+       	    	   <span class="bar"><span class="java"></span></span>
+       	    </li>
+       	    <li><h3>SQL<i style="color:green" class='bx bxs-data'></i></h3>
+       	    	   <span class="bar"><span class="sql"></span></span>
+       	    </li>
+    	</div>
+    	 
+    </section>
+
+    <section id="project" class="portfolio">
+    	<div class="maintext">
+    		<span>Projects I have done</span>
+    		<h1>Academic projects</h1>
+    	</div>
+    	<div class="container">
+    		<div class="filler-button">
+    			<button class="btn">All</button>
+    			<button class="btn">Product</button>
+    			<button class="btn">Interacting</button>
+    			<button class="btn">design</button>
+    		</div>
+    		<div class="portfolio-gallery">
+    			<div class="port-box">
+    				<div class="port-image">
+    					<img src="../../Images/project.jpeg">
+    			   </div>
+    			  <div class="content">
+    			  	<h3>Embedded System Design</h3>
+    			  	<p>Implementation of crop selection by land dataset by using machine learning techniques, Based on various types of sensors,  predicted which crop is suitable for that particular type of land. 
+    			  	</p>
+    			  </div>
+    		</div>
+
+    		    <div class="portfolio-gallery">
+    			<div class="port-box">
+    				<div class="port-image">
+    					<img src="../../Images/project1.jpeg">
+    			   </div>
+    			  <div class="content">
+    			  	<h3>Different sensors</h3>
+    			  	<p>Here we have used many sensors for predicting which crop is suitable for particular type of land</p>
+    			  </div>
+    		</div>
+    	</div>
+    </section>
+
+   <section id="background">
+    <section id="resume" class="resume">
+    	<h1 id="resume">Resume</h1>
+    	<p>Please find the resume attached below</p>
+    	 <div className="header__buttons">
+    <a href="C:\Users\HariPriya\Downloads\Haripriya_Resume (2).pdf" className="btn btn-outline" download><button class="download">Download Resume</button>
+    </a>
+</div>
+    </section>
+
+    <section id="contact" class="contact">
+    	<div class="maintext">
+    		<span>Ask me Questions</span>
+    		<h1>Contact Me</h1>
+    	</div>
+    	  <a href=""><i class="fa-solid fa-envelope"></i>chharipriya2001@gmail.com</a><br>
+			<a href=""><i class="fa-solid fa-phone"></i>+91 7075109120</a><br>
+			<p>
+			 please contact me for more details <br>
+			 These are my social media platforms <br>
+			</p>
+
+			<div class="Social-icons">
+	  				<a href="https://www.facebook.com/profile.php?id=100075381194983&mibextid=ZbWKwL"><i class='bx bxl-facebook-circle'></i></a>
+	  				<a href="https://www.linkedin.com/in/chembeti-haripriya-3b1693247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin-square'></i></a>
+	  				<a href="https://www.instagram.com/_.haripriyaah._/"><i class='bx bxl-instagram'></i></a>
+	  				<a href="https://github.com/27Haritha"><i class='bx bxl-github'></i></a>
+	  	</div>
+		</section>
+</section>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
